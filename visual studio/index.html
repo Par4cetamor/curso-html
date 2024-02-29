@@ -1,0 +1,25 @@
+<div id="page">
+    <h1>CSS Instagram</h1>
+  
+    <div id="filtros">
+      <p>Elige el filtro deseado:</p>
+      <div></div>
+    </div>
+  
+    <label for="ownenable">Activar filtros propios: <input id="ownenable" type="checkbox" onclick="$('#ownfilter').toggle(); updateImage()" /></label><br />
+  
+    <img id="imagen" class="Original" src="https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/coffee.jpg" />
+  
+    <div id="ownfilter" style="display:none">
+      <label for="grayscale">Grayscale: <input id="grayscale" type="range" max="1" min="0" step="0.05" value="0" onChange="updateImage()" /><span></span></label>
+      <label for="sepia">Sepia: <input id="sepia" type="range" max="1" min="0" step="0.05" value="0" onChange="updateImage()" /><span></span></label>
+      <label for="saturate">Saturate: <input id="saturate" type="range" max="1" min="0" step="0.05" value="1" onChange="updateImage()" /><span></span></label>
+      <label for="opacity">Opacity: <input id="opacity" type="range" max="1" min="0" step="0.05" value="1" onChange="updateImage()" /><span></span></label>
+      <label for="brightness">Brightness: <input id="brightness" type="range" max="1" min="0" step="0.05" value="1" onChange="updateImage()" /><span></span></label>
+      <label for="contrast">Contrast: <input id="contrast" type="range" max="1" min="0" step="0.05" value="1" onChange="updateImage()" /><span></span></label>
+      <label for="invert">Invert: <input id="invert" type="range" max="1" min="0" step="0.05" value="0" onChange="updateImage()" /><span></span></label>
+      <label for="blur">Blur: <input id="blur" type="range" max="100" min="0" value="0" onChange="updateImage()" /><span></span></label>
+      <label for="hue-rotate">Hue-rotate: <input id="hue-rotate" type="range" max="360" min="0" value="0" onChange="updateImage()" /><span></span></label>
+    </div>
+  
+  </div>
